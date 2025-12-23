@@ -3943,10 +3943,11 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 600px) {
     .s-hero__content h1 {
-        font-size: 28vw;
+        font-size: 19vw;
     }
     .s-hero__content-about {
-        padding-right: 15vw;
+        padding-right: 4rem;
+        padding-left: 0;
     }
     .s-hero__content-about br {
         display: none;
@@ -3981,12 +3982,16 @@ html.no-csstransitions .s-hero__content {
     .s-hero__content h1::before {
         left: -8rem;
     }
+    .s-hero__content h1 {
+        font-size: 16vw;
+    }
     .s-hero__content {
         padding-bottom: 14vh;
     }
     .s-hero__content-about {
-        font-size: 2.2rem;
-        padding-right: 6rem;
+        font-size: 2rem;
+        padding-right: 2rem;
+        padding-left: 0;
     }
     .s-hero__video {
         right: auto;
@@ -4771,12 +4776,25 @@ html.no-csstransitions .s-hero__content {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .s-contact .btn {
+        width: 70%;
+        max-width: 400px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .s-contact {
         padding-top: var(--vspace-4);
     }
     .s-contact__logo img {
         width: 200px;
+    }
+    .s-contact .btn {
+        width: 90%;
+        max-width: none;
+        font-size: var(--text-sm);
+        padding: 1.2rem 2rem;
     }
 }
 
